@@ -157,3 +157,14 @@
     padding: 16px 8px;
   }
 }
+
+/* Make theme-toggle icon monochrome like the search icon. */
+.sun-icon,
+.moon-icon {
+  color: inherit;
+}
+
+[data-theme="dark"] .sun-icon,
+[data-theme="dark"] .moon-icon {
+  color: inherit;
+}
