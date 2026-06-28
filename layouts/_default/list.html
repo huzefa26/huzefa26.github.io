@@ -1,0 +1,72 @@
+{{ define "main" }}
+<div class="content">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+  {{ if eq .Section "projects" }}
+  <!-- Projects Grid Layout -->
+  <div class="featured-grid">
+    {{ range .Pages }}
+    <article class="featured-card">
+      {{ $projectUrl := .RelPermalink }}
+      {{ $isExternal := false }}
+      {{ if .Params.project_url }}
+      {{ $projectUrl = .Params.project_url }}
+      {{ $isExternal = true }}
+      {{ end }}
+      <a href="{{ $projectUrl }}"{{ partial "external-link-attrs.html" (dict "external" $isExternal) | safeHTMLAttr }}>
+        {{ if .Params.main_image }}
+        <div class="featured-image" style="background-image: url('{{ .Params.main_image }}');">
+          <div class="featured-overlay">
+            <h3 class="featured-card-title">
+              {{ .Title }}
+              {{ if $isExternal }}<span class="external-link-icon">↗</span>{{ end }}
+            </h3>
+          </div>
+        </div>
+        {{ else }}
+        <div class="featured-image featured-no-image">
+          <div class="featured-overlay">
+            <h3 class="featured-card-title">
+              {{ .Title }}
+              {{ if $isExternal }}<span class="external-link-icon">↗</span>{{ end }}
+            </h3>
+          </div>
+        </div>
+        {{ end }}
+        {{ if .Params.summary }}
+        <p class="featured-summary">{{ .Params.summary }}</p>
+        {{ end }}
+      </a>
+    </article>
+    {{ end }}
+  </div>
+  {{ else }}
+  <!-- Posts List (no timeline; text list with row dividers) -->
+  <ul class="post-list">
+    {{ range .Pages }}
+    <li class="post-item">
+      <a href="{{ .RelPermalink }}" class="post-item-link">
+        <div class="post-item-meta">
+          <span class="post-item-date">{{ .Date | time.Format ":date_medium" }}</span>
+          <span class="post-item-duration">{{ .ReadingTime }} min read</span>
+        </div>
+        <h3 class="post-item-title">{{ .LinkTitle }}</h3>
+        {{ if .Summary }}
+        <p class="post-item-summary">{{ .Summary }}</p>
+        {{ end }}
+        {{ with .GetTerms "categories" }}
+        <div class="post-item-tags">
+          {{ range . }}
+          <span class="post-item-tag">{{ .LinkTitle }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+
+</div>
+{{ end }}

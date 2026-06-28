@@ -59,3 +59,101 @@
   /* Gmail red EA4335 Neutral dark 181717  */
   border-color: #181717;
 }
+
+/* Posts page — list with row dividers (no timeline rail). */
+.post-list {
+  margin-top: 32px;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-item {
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.15s ease;
+}
+
+.post-item:first-child {
+  border-top: 1px solid var(--border-color);
+}
+
+.post-item-link {
+  display: block;
+  padding: 20px 12px;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+  border-radius: 4px;
+}
+
+.post-item-link:hover {
+  background-color: var(--bg-secondary);
+}
+
+.post-item-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-quaternary);
+  margin-bottom: 6px;
+}
+
+.post-item-duration::before {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  background: var(--text-quaternary);
+  border-radius: 50%;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.post-item-title {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--text-primary);
+  margin: 0 0 6px 0;
+  transition: color 0.2s ease;
+}
+
+.post-item-link:hover .post-item-title {
+  color: var(--accent-color);
+}
+
+.post-item-summary {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-tertiary);
+  margin: 0 0 8px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.post-item-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.post-item-tag {
+  font-size: 11px;
+  padding: 2px 8px;
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  border-radius: 3px;
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+}
+
+@media (max-width: 768px) {
+  .post-item-link {
+    padding: 16px 8px;
+  }
+}
