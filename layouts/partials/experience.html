@@ -1,0 +1,33 @@
+{{/* Renders the Experience & Education timeline from data/experience.toml.
+   Reuses the theme's `.home-list` timeline classes for visual consistency. */}}
+{{ with site.Data.experience }}
+{{ if .entries }}
+<section class="posts-section">
+  <div class="posts-section-header">
+    <h2 class="featured-title">EXPERIENCE &amp; EDUCATION</h2>
+  </div>
+  <ul class="home-list">
+    {{ range .entries }}
+    <li class="home-list-div">
+      <div class="home-list-link-static experience-item">
+        <span class="home-list-date experience-date">{{ .date }}</span>
+        <div class="home-list-content experience-content">
+          {{ if .logo }}
+          <img class="experience-logo" src="{{ .logo }}" alt="{{ .title }} logo" loading="lazy" />
+          {{ end }}
+          <h3 class="home-list-title experience-title">{{ .title }}</h3>
+          <div class="experience-subtitle">{{ .subtitle }}</div>
+          {{ with .location }}<div class="experience-location">{{ . }}</div>{{ end }}
+          {{ with .bullets }}
+          <ul class="experience-bullets">
+            {{ range . }}<li>{{ . | markdownify }}</li>{{ end }}
+          </ul>
+          {{ end }}
+        </div>
+      </div>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}
+{{ end }}

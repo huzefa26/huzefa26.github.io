@@ -1,0 +1,57 @@
+# Experience & Education timeline displayed on the homepage.
+# Each entry renders as a timeline item (reuses the theme's home-list styles).
+# Swap the placeholder values with real content.
+#
+# Fields:
+#   date        String shown on the left (e.g. "2022 – Present").
+#   logo        Optional image path under /static (e.g. "/images/logos/acme.svg").
+#   title       Main heading (company or institution name).
+#   subtitle    Role / degree line.
+#   location    Optional location line.
+#   bullets     Optional list of bullet points.
+#   type        "experience" (default) or "education".
+
+[[entries]]
+date = "2022 – Present"
+logo = ""
+title = "Acme Corp"
+subtitle = "Software Engineer · Remote"
+location = ""
+bullets = [
+  "[PLACEHOLDER] Bullet point describing a key responsibility or achievement.",
+  "[PLACEHOLDER] Bullet point describing a second responsibility or impact.",
+]
+type = "experience"
+
+[[entries]]
+date = "2020 – 2022"
+logo = ""
+title = "Beta Technologies"
+subtitle = "Software Developer · Bengaluru"
+location = ""
+bullets = [
+  "[PLACEHOLDER] Bullet point describing work at Beta Technologies.",
+]
+type = "experience"
+
+[[entries]]
+date = "2019 – 2020"
+logo = ""
+title = "Gamma Labs"
+subtitle = "Software Engineering Intern · Bengaluru"
+location = ""
+bullets = [
+  "[PLACEHOLDER] Bullet point describing internship work.",
+]
+type = "experience"
+
+[[entries]]
+date = "2016 – 2020"
+logo = ""
+title = "University Name"
+subtitle = "B.Tech, Computer Science · GPA 0.0 / 10"
+location = ""
+bullets = [
+  "[PLACEHOLDER] Noteworthy coursework or activities.",
+]
+type = "education"
