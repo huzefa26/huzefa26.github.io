@@ -168,3 +168,20 @@
 [data-theme="dark"] .moon-icon {
   color: inherit;
 }
+
+/* Single source of truth for the gap above the footer.
+   Overrides theme defaults:
+   footer { margin-top: 100px },
+   .content { margin-bottom: 2rem },
+   .featured-section { margin-bottom: 60px }. */
+footer {
+  margin-top: 48px;
+}
+
+.content {
+  margin-bottom: 0;
+}
+
+.featured-section {
+  margin-bottom: 0;
+}
