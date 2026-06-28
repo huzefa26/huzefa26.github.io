@@ -1,7 +1,14 @@
-baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'My New Hugo Project'
+baseURL = 'https://huzefa26.github.io/'
+languageCode = 'en-us'
+title = 'Huzefa Jambughoda'
 theme = 'yassi'
+
+# Emit /robots.txt using the theme's robots.txt layout (allow all crawlers + Sitemap).
+enableRobotsTXT = true
+
+# Emit posts and projects as JSON for client-side search (Fuse.js).
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
 
 [services]
   [services.googleAnalytics]
@@ -12,9 +19,13 @@ theme = 'yassi'
   CoverImageWidth = 150
   
   # Theme Colors
-  # Accent color used for site title underline, timeline bullets, and project cards
-  accentColor = "#47b1db"  # Light blue (default)
+  # Accent color used for site title underline, timeline bullets, and project cards.
+  # Default light blue below; uncomment one of the candidate swatches to preview.
+  accentColor = "#47b1db"      # Default light blue
   accentColorDark = "#5fc9f0"  # Lighter blue for dark mode
+  # accentColor = "#b5221c"    # Terracotta / rust  (dark: "#d4503e")
+  # accentColor = "#0e7c7b"    # Teal              (dark: "#16a8a6")
+  # accentColor = "#4f46e5"    # Indigo            (dark: "#818cf8")
   
   # Project display mode
   useProjectCarousel = true          # or false for grid
@@ -35,14 +46,14 @@ theme = 'yassi'
   # Social Media Links
   [params.social]
     github = "https://github.com/huzefa26"
-    # twitter = "https://twitter.com/yourusername"
+    twitter = "https://twitter.com/huzefa26"
     linkedin = "https://linkedin.com/in/huzefa-jambughoda"
-    # facebook = "https://facebook.com/yourusername"
-    # instagram = "https://instagram.com/yourusername"
-    # tiktok = "https://tiktok.com/@yourusername"
-    # snapchat = "https://snapchat.com/add/yourusername"
+    email = "mailto:huzefa@example.com"  # TODO: replace with real address
+
+  # Open external links in a new tab (markdown body, social links, project cards)
+  openExternalLinksInNewTab = true
   
-  # Giscus Comments (optional)
+  # Giscus Comments (optional) — disabled; enable later if desired.
   [params.giscus]
     enabled = false
     repo = "yourusername/your-comments-repo"
@@ -51,3 +62,23 @@ theme = 'yassi'
     categoryId = "DIC_xxxxxxxxxxxxx"
     lightTheme = "light"
     darkTheme = "dark"
+
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+[[menus.main]]
+name = 'Posts'
+pageRef = '/posts'
+weight = 20
+
+[[menus.main]]
+name = 'Projects'
+pageRef = '/projects'
+weight = 30
+
+[[menus.main]]
+name = 'CV'
+url = '/cv.pdf'
+weight = 40
