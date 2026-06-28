@@ -53,3 +53,9 @@
   align-items: center;
   justify-content: center;
 }
+
+.social-link.email:hover {
+  background: #181717;
+  /* Gmail red EA4335 Neutral dark 181717  */
+  border-color: #181717;
+}
