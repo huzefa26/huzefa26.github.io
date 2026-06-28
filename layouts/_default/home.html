@@ -48,7 +48,7 @@
         {{ end }}
 
         {{ with site.Params.social.email }}
-        <a href="{{ . }}" aria-label="Email" class="social-link email">
+        <a href="{{ . }}" {{ partial "external-link-attrs.html" (dict "external" true) | safeHTMLAttr }} aria-label="Email" class="social-link email">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round">
             <rect x="2" y="4" width="20" height="16" rx="2"></rect>
