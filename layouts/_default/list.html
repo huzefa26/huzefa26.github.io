@@ -55,7 +55,7 @@
         {{ if .Summary }}
         <p class="post-item-summary">{{ .Summary }}</p>
         {{ end }}
-        {{ with .GetTerms "categories" }}
+        {{ with .GetTerms "tags" }}
         <div class="post-item-tags">
           {{ range . }}
           <span class="post-item-tag">{{ .LinkTitle }}</span>
