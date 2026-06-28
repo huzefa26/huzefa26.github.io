@@ -1,12 +1,12 @@
 +++
 title = "Personal Website"
-date = 2024-06-28
-summary = "This site — a portfolio and blog built with Hugo and the yassi theme."
+date = 2026-06-28
+summary = "This site - a portfolio and blog built with Hugo and the yassi theme."
 featured = false
 main_image = "/images/project-6.svg"
 project_url = "https://github.com/huzefa26/personal-website"
-tags = ["hugo", "static-site", "portfolio"]
-categories = ["Web Development"]
+tags = ["web"]
+categories = []
 +++
 
 [PLACEHOLDER] Overview — a portfolio and blog for sharing projects and writing.

@@ -1,13 +1,13 @@
 +++
-title = "DevTool CLI"
-date = 2024-03-15
-summary = "A command-line tool that scaffolds and automates everyday developer workflows."
+title = "Mandli"
+date = 2026-03-14
+summary = "A multi-agent pipeline that researches topics, writes SEO-friendly content and publishes them periodically."
 featured = true
 weight = 1
 main_image = "/images/project-1.svg"
-project_url = "https://github.com/huzefa26/devtool-cli"
-tags = ["go", "cli", "automation"]
-categories = ["Developer Tools"]
+project_url = "https://github.com/huzefa26/mandli"
+tags = ["ai", "multi-agent", "automation"]
+categories = []
 +++
 
 [PLACEHOLDER] Project overview — describe the problem this tool solves, what motivated it, and who it's for.

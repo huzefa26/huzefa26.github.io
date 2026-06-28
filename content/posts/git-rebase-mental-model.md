@@ -1,18 +1,16 @@
 +++
 title = "A Mental Model for Git Rebase"
-date = 2024-05-10
-summary = "How I stopped fearing rebase by thinking of it as replaying commits onto a new base."
-tags = ["git", "version-control", "notes"]
-categories = ["Notes"]
+date = 2026-06-28
+summary = "See rebase as replaying commits."
+tags = ["dev", "ideas"]
+categories = []
 +++
-
-[PLACEHOLDER] Intro — rebase vs merge in one paragraph.
 
 ## The mental model
 
-[PLACEHOLDER] Commits as patches; rebase replays them onto another commit.
+Commits as patches; rebase replays them onto another commit.
 
 ## When I use it
 
-- [PLACEHOLDER] Tidying a feature branch before merging
-- [PLACEHOLDER] Never on shared branches
+- Tidying a feature branch before merging
+- Never on shared branches, as it changes the commit hash

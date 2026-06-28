@@ -1,12 +1,13 @@
 +++
-title = "Dotfiles Manager"
-date = 2023-05-01
-summary = "A tiny script to bootstrap and keep dotfiles in sync across machines."
-featured = false
+title = "YT Ads Compliance RAG"
+date = 2026-05-28
+summary = "A RAG pipeline that ingests YouTube videos, extracts multimodal content and generates compliance reports."
+featured = true
+weight = 2
 main_image = "/images/project-5.svg"
-project_url = "https://github.com/huzefa26/dotfiles"
-tags = ["bash", "dotfiles", "automation"]
-categories = ["Developer Tools"]
+project_url = "https://github.com/huzefa26/yt-compliance-rag"
+tags = ["ai", "rag", "automation"]
+categories = []
 +++
 
 [PLACEHOLDER] Overview — why a reproducible setup matters when switching machines.

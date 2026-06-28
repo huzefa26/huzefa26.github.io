@@ -12,46 +12,93 @@
 #   type        "experience" (default) or "education".
 
 [[entries]]
-date = "2022 – Present"
+date = "2023 - 2026"
 logo = ""
-title = "Acme Corp"
-subtitle = "Software Engineer · Remote"
+title = "ACDC"
+subtitle = "Founder & Lead AI Engineer · Dubai"
 location = ""
 bullets = [
-  "[PLACEHOLDER] Bullet point describing a key responsibility or achievement.",
-  "[PLACEHOLDER] Bullet point describing a second responsibility or impact.",
+  "Built an Agentic AI product that assists sales teams. Used LangGraph (ReAct with tools), Qdrant, Mem0.",
+  "Fine-tuned Kimi K2 on UAE construction industry data.",
+  "Handled the business ops and customer management.",
 ]
 type = "experience"
 
 [[entries]]
-date = "2020 – 2022"
+date = "2022 - 2023"
 logo = ""
-title = "Beta Technologies"
-subtitle = "Software Developer · Bengaluru"
+title = "Infocusp"
+subtitle = "Senior Machine Learning Engineer · Ahmedabad"
 location = ""
 bullets = [
-  "[PLACEHOLDER] Bullet point describing work at Beta Technologies.",
+  "Part of a team at Google X working on genomics & agriculture",
+  "Picked genes that were to be modified in new seeds for desired traits.",
+  "Used Monte Carlo Dropout & Variational Dropout in NN arch to reduce the effects of network sparsity.",
+  "Introduced & built a pipeline, fully YAML-configured, supporting custom NN arch + all Scikit-Learn models. Hyper-parameter tunable & automated VertexAI deployments.",
+  "Built 7 data pipelines interpreting & transforming raw DNA sequences to trainable features.",
+  "Developed a CV system on Vertex AI with crowd-sourced labelling to automate data collection from live footage.",
 ]
 type = "experience"
 
 [[entries]]
-date = "2019 – 2020"
+date = "2021 - 2022"
 logo = ""
-title = "Gamma Labs"
+title = "Infocusp"
+subtitle = "Machine Learning Engineer · Ahmedabad"
+location = ""
+bullets = [
+  "Autodesk team: Build models for chemical dosage and power consumption for water treatment plants.",
+  "Bryte team: Wrote infrastructure services to preprocess smart-bed data coming in real-time.",
+  "Legal Sifter team: Fine-tuned BERT architectures to optimize embedding strategies for legal documents.",
+]
+type = "experience"
+
+[[entries]]
+date = "2020 - 2020"
+logo = ""
+title = "Schneider Electric"
 subtitle = "Software Engineering Intern · Bengaluru"
 location = ""
 bullets = [
-  "[PLACEHOLDER] Bullet point describing internship work.",
+  "Researched ML approaches for real-time phishing detection, evaluating feature engineering strategies on URL structure and webpage contents.",
+  "Analyzed energy consumption data to identify usage patterns and operational anomalies.",
 ]
 type = "experience"
 
 [[entries]]
-date = "2016 – 2020"
+date = "2019 - 2019"
 logo = ""
-title = "University Name"
-subtitle = "B.Tech, Computer Science · GPA 0.0 / 10"
+title = "Enlighten Infosystems"
+subtitle = "Software Engineering Intern · Vadodara"
 location = ""
 bullets = [
-  "[PLACEHOLDER] Noteworthy coursework or activities.",
+  "Built an interactive geospatial visualization tool in Python and Bokeh.",
+  "Implemented swarm algorithms for feature selection on genetic data - Artificial Bee Colony, Ant Colony Optimization and Genetic Algorithm.",
 ]
+type = "experience"
+
+[[entries]]
+date = "2018 - 2018"
+logo = ""
+title = "Bhaskaracharya Institute of Space Applications and Geo-Informatics"
+subtitle = "Software Engineering Intern · Gandhinagar"
+location = ""
+bullets = [
+  "Built 3 plugins to automate GIS workflows in the org.",
+  "1 plugin reduced manual trimming work of ~5mins per spatial feature to seconds.",
+]
+type = "experience"
+
+[[entries]]
+date = "2020 - 2023"
+logo = ""
+title = "Indian Institute of Technology (IIT), Madras"
+subtitle = "B.Sc, Data Science · GPA 8.80 / 10"
+type = "education"
+
+[[entries]]
+date = "2016 - 2020"
+logo = ""
+title = "Charotar University of Science and Technology"
+subtitle = "B.Tech, Information Technology · GPA 9.28 / 10"
 type = "education"

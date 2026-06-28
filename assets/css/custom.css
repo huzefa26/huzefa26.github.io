@@ -1,5 +1,13 @@
 /* Custom styles layered on top of the yassi theme. */
 
+/* Avatar image */
+.cover-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
 /* Experience & Education timeline */
 .experience-item {
   align-items: flex-start;
