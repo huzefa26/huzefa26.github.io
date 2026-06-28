@@ -15,17 +15,18 @@ enableRobotsTXT = true
     ID = "G-XXXXXXXXXX"  # Your GA4 measurement ID, not set currently
 
 [params]
-  CoverImage = "/images/avatar.svg"  # or your own image
+  CoverImage = "/images/1697986456568.jpg"  # or your own image
   CoverImageWidth = 150
   
   # Theme Colors
   # Accent color used for site title underline, timeline bullets, and project cards.
   # Default light blue below; uncomment one of the candidate swatches to preview.
-  accentColor = "#47b1db"      # Default light blue
-  accentColorDark = "#5fc9f0"  # Lighter blue for dark mode
-  # accentColor = "#b5221c"    # Terracotta / rust  (dark: "#d4503e")
-  # accentColor = "#0e7c7b"    # Teal              (dark: "#16a8a6")
-  # accentColor = "#4f46e5"    # Indigo            (dark: "#818cf8")
+  # accentColor = "#47b1db"      # Default light blue
+  # accentColorDark = "#5fc9f0"  # Lighter blue for dark mode
+  accentColor = "#b5221c"    # Terracotta / rust  (dark: "#")
+  accentColorDark = "#d4503e"
+  # accentColor = "#0e7c7b"    # Teal
+  # accentColorDark = "#16a8a6"
   
   # Project display mode
   useProjectCarousel = true          # or false for grid
@@ -34,21 +35,21 @@ enableRobotsTXT = true
   # Search
   enableSearch = true  # Enable site search with Fuse.js
 
-  # Timeline filter
-  enableTimelineFilter = false  # true to show All / Posts / Projects filter above the timeline
-  timelineFilterStyle = "pills"  # "pills" (default) or "dropdown"
-  
-  # Timeline Starting Point (optional)
-  timelineStart = "🚀 And so it begins..."
-  timelineStartSubText = "Additional context or details..."  # optional
-  timelineStartDate = "Feb 2021"  # optional
+  # Timeline filter — unused now that posts no longer use the timeline view; keep disabled.
+  # enableTimelineFilter = false
+  # timelineFilterStyle = "pills"  # "pills" (default) or "dropdown"
+
+  # Timeline Starting Point — unused now that the posts timeline is removed from home.
+  # timelineStart = "🚀 And so it begins..."
+  # timelineStartSubText = "Additional context or details..."  # optional
+  # timelineStartDate = "Feb 2021"  # optional
   
   # Social Media Links
   [params.social]
     github = "https://github.com/huzefa26"
-    twitter = "https://twitter.com/huzefa26"
+    twitter = "https://twitter.com/huzefaj"
     linkedin = "https://linkedin.com/in/huzefa-jambughoda"
-    email = "mailto:huzefa@example.com"  # TODO: replace with real address
+    email = "mailto:try.huzefa@gmail.com"
 
   # Open external links in a new tab (markdown body, social links, project cards)
   openExternalLinksInNewTab = true
