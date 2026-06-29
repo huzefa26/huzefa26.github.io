@@ -15,7 +15,7 @@ enableRobotsTXT = true
     ID = "G-XXXXXXXXXX"  # Your GA4 measurement ID, not set currently
 
 [params]
-  CoverImage = "/images/1697986456568.jpg"  # or your own image
+  CoverImage = "/images/profile-picture.jpg"  # or your own image
   CoverImageWidth = 150
   
   # Theme Colors
