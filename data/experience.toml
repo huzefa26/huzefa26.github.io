@@ -32,7 +32,7 @@ subtitle = "Senior Machine Learning Engineer · Ahmedabad"
 location = ""
 bullets = [
   "Part of a team at Google X working on genomics & agriculture",
-  "Picked genes that were to be modified in new seeds for desired traits.",
+  "Picked genes to be modified for desired traits.",
   "Used Monte Carlo Dropout & Variational Dropout in NN arch to reduce the effects of network sparsity.",
   "Introduced & built a pipeline, fully YAML-configured, supporting custom NN arch + all Scikit-Learn models. Hyper-parameter tunable & automated VertexAI deployments.",
   "Built 7 data pipelines interpreting & transforming raw DNA sequences to trainable features.",
@@ -47,8 +47,8 @@ title = "Infocusp"
 subtitle = "Machine Learning Engineer · Ahmedabad"
 location = ""
 bullets = [
-  "Autodesk team: Build models for chemical dosage and power consumption for water treatment plants.",
-  "Bryte team: Wrote infrastructure services to preprocess smart-bed data coming in real-time.",
+  "Autodesk team: Time-series forecasting models for chemical dosage and power consumption for water treatment plants.",
+  "Bryte team: Wrote AWS infrastructure services to preprocess smart-bed data coming in real-time.",
   "Legal Sifter team: Fine-tuned BERT architectures to optimize embedding strategies for legal documents.",
 ]
 type = "experience"
@@ -60,7 +60,7 @@ title = "Schneider Electric"
 subtitle = "Software Engineering Intern · Bengaluru"
 location = ""
 bullets = [
-  "Researched ML approaches for real-time phishing detection, evaluating feature engineering strategies on URL structure and webpage contents.",
+  "Researched ML approaches for real-time phishing detection (URL structure & webpage contents).",
   "Analyzed energy consumption data to identify usage patterns and operational anomalies.",
 ]
 type = "experience"
