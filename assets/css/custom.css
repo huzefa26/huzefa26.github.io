@@ -166,6 +166,29 @@
   }
 }
 
+/* On mobile, stack the date above the content for static (experience/education)
+   timeline rows — mirrors what the theme does for `.home-list-link`. Without this,
+   bullet-less experience entries lose structure because the date sits beside
+   the content instead of above it. */
+@media (max-width: 768px) {
+  .home-list-link-static {
+    flex-direction: column;
+  }
+
+  .home-list-link-static .home-list-date {
+    position: static;
+    width: auto;
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 4px;
+    font-size: 12px;
+  }
+
+  .home-list-link-static .home-list-content {
+    margin-left: 50px;
+  }
+}
+
 /* Make theme-toggle icon monochrome like the search icon. */
 .sun-icon,
 .moon-icon {
